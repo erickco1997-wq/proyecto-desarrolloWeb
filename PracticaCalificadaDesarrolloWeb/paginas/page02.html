@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page02</title>
+  <link rel="stylesheet" href="../estilos/page02.css">
+</head>
+<body>
+  <main class="window">
+    <section class="panel top-panel">
+      <div class="topbar">
+        <div class="dots"></div>
+        <div class="icon-row top-icons">
+          <svg viewBox="0 0 24 24"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 8-6-4-6 4 1-8-5-5 7-1 3-6Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M9 3h11v11H9zM4 9H3v12h12v-1"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg>
+        </div>
+      </div>
+
+      <div class="sliders-only">
+        <label>Media volume
+          <div class="track-row">
+            <svg class="side-icon" viewBox="0 0 24 24"><path d="M5 9v6h4l5 4V5l-5 4H5Zm11 2a4 4 0 0 1 0 2m2-4a7 7 0 0 1 0 6"/></svg>
+            <input type="range" min="0" max="100" value="5">
+          </div>
+        </label>
+        <label>Alarm volume
+          <div class="track-row">
+            <input type="range" min="0" max="100" value="0">
+            <svg class="side-icon" viewBox="0 0 24 24"><path d="M15 6 9 2M9 22l6-4M5.6 7.5a9 9 0 1 0 12.8 0 9 9 0 0 0-12.8 0ZM12 8v5l3 2"/></svg>
+          </div>
+        </label>
+        <label>Icon click callback
+          <div class="track-row">
+            <svg class="side-icon" viewBox="0 0 24 24"><path d="m20 20-4.3-4.3M4 11a7 7 0 1 0 14 0A7 7 0 0 0 4 11Z"/></svg>
+            <input type="range" min="0" max="100" value="5">
+            <svg class="side-icon" viewBox="0 0 24 24"><path d="m20 20-4.3-4.3M4 11a7 7 0 1 0 14 0A7 7 0 0 0 4 11Z"/></svg>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="icon-row">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/></svg>
+        <svg viewBox="0 0 24 24"><path d="m5 19 14-14M9 5h10v10"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M4 12h16M6 8h12M8 16h8"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M6 5h12v14H6zM9 9h6M9 13h6"/></svg>
+      </div>
+
+      <section class="color-card">
+        <div class="color-preview" id="preview"></div>
+        <div class="controls">
+          <label>R
+            <input id="rRange" type="range" min="0" max="255" value="52">
+            <input id="rNum" type="number" min="0" max="255" value="52">
+          </label>
+          <label>G
+            <input id="gRange" type="range" min="0" max="255" value="134">
+            <input id="gNum" type="number" min="0" max="255" value="134">
+          </label>
+          <label>B
+            <input id="bRange" type="range" min="0" max="255" value="217">
+            <input id="bNum" type="number" min="0" max="255" value="217">
+          </label>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="../scripts/page02.js"></script>
+ </body>
+</html>

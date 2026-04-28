@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #fd5b08 0 46%, #e8e8e8 46% 100%);
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 16px 140px;
+}
+
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.hero p {
+  margin: 0;
+  opacity: 0.92;
+}
+
+.gallery-wrap {
+  margin-top: -86px;
+  text-align: center;
+  padding: 0 16px 36px;
+}
+
+.gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.gallery img {
+  width: calc(33.333% - 15px);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.gallery img:hover {
+  opacity: 1;
+}
+
+.credit {
+  margin: 18px 0 24px;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.more-btn {
+  width: 170px;
+  height: 52px;
+  border: 0;
+  border-radius: 999px;
+  background: #fd5b08;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 479px) {
+  .hero {
+    padding: 46px 16px 80px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 899px) {
+  .gallery img {
+    width: calc(50% - 11px);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .gallery img {
+    width: calc(33.333% - 15px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    max-width: 1200px;
+  }
+}
